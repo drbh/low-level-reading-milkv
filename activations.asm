@@ -444,7 +444,7 @@ Disassembly of section .text:
    105c4:	80858593          	addi	a1,a1,-2040 # 10dc8 <dish_ref+0x100>
    105c8:	00000073          	ecall
    105cc:	00001797          	auipc	a5,0x1
-   105d0:	8ac78793          	addi	a5,a5,-1876 # 10e78 <dish_ref+0x1b0>
+   105d0:	89c78793          	addi	a5,a5,-1892 # 10e68 <dish_ref+0x1a0>
    105d4:	7679                	lui	a2,0xffffe
    105d6:	0007b883          	ld	a7,0(a5)
    105da:	0087b803          	ld	a6,8(a5)
@@ -469,7 +469,7 @@ Disassembly of section .text:
    1061a:	8526                	mv	a0,s1
    1061c:	432000ef          	jal	10a4e <gelu_ref>
    10620:	00000617          	auipc	a2,0x0
-   10624:	7c860613          	addi	a2,a2,1992 # 10de8 <dish_ref+0x120>
+   10624:	7b860613          	addi	a2,a2,1976 # 10dd8 <dish_ref+0x110>
    10628:	87b2                	mv	a5,a2
    1062a:	0017c703          	lbu	a4,1(a5)
    1062e:	0785                	addi	a5,a5,1
@@ -478,7 +478,7 @@ Disassembly of section .text:
    10636:	04000893          	li	a7,64
    1063a:	4505                	li	a0,1
    1063c:	00000597          	auipc	a1,0x0
-   10640:	7ac58593          	addi	a1,a1,1964 # 10de8 <dish_ref+0x120>
+   10640:	79c58593          	addi	a1,a1,1948 # 10dd8 <dish_ref+0x110>
    10644:	00000073          	ecall
    10648:	77f9                	lui	a5,0xffffe
    1064a:	f8078713          	addi	a4,a5,-128 # ffffffffffffdf80 <__global_pointer$+0xfffffffffffeb780>
@@ -492,13 +492,13 @@ Disassembly of section .text:
    10668:	8cd2                	mv	s9,s4
    1066a:	8c4e                	mv	s8,s3
    1066c:	00000b97          	auipc	s7,0x0
-   10670:	7a4b8b93          	addi	s7,s7,1956 # 10e10 <dish_ref+0x148>
+   10670:	794b8b93          	addi	s7,s7,1940 # 10e00 <dish_ref+0x138>
    10674:	00000b17          	auipc	s6,0x0
-   10678:	794b0b13          	addi	s6,s6,1940 # 10e08 <dish_ref+0x140>
+   10678:	784b0b13          	addi	s6,s6,1924 # 10df8 <dish_ref+0x130>
    1067c:	00000d17          	auipc	s10,0x0
-   10680:	784d0d13          	addi	s10,s10,1924 # 10e00 <dish_ref+0x138>
+   10680:	774d0d13          	addi	s10,s10,1908 # 10df0 <dish_ref+0x128>
    10684:	00000617          	auipc	a2,0x0
-   10688:	77c60613          	addi	a2,a2,1916 # 10e00 <dish_ref+0x138>
+   10688:	76c60613          	addi	a2,a2,1900 # 10df0 <dish_ref+0x128>
    1068c:	00164783          	lbu	a5,1(a2)
    10690:	0605                	addi	a2,a2,1
    10692:	ffed                	bnez	a5,1068c <_start+0x108>
@@ -506,12 +506,12 @@ Disassembly of section .text:
    10698:	04000893          	li	a7,64
    1069c:	4505                	li	a0,1
    1069e:	00000597          	auipc	a1,0x0
-   106a2:	76258593          	addi	a1,a1,1890 # 10e00 <dish_ref+0x138>
+   106a2:	75258593          	addi	a1,a1,1874 # 10df0 <dish_ref+0x128>
    106a6:	00000073          	ecall
    106aa:	000c2507          	flw	fa0,0(s8)
    106ae:	b25ff0ef          	jal	101d2 <print_float>
    106b2:	00000617          	auipc	a2,0x0
-   106b6:	75660613          	addi	a2,a2,1878 # 10e08 <dish_ref+0x140>
+   106b6:	74660613          	addi	a2,a2,1862 # 10df8 <dish_ref+0x130>
    106ba:	00164783          	lbu	a5,1(a2)
    106be:	0605                	addi	a2,a2,1
    106c0:	ffed                	bnez	a5,106ba <_start+0x136>
@@ -519,12 +519,12 @@ Disassembly of section .text:
    106c6:	04000893          	li	a7,64
    106ca:	4505                	li	a0,1
    106cc:	00000597          	auipc	a1,0x0
-   106d0:	73c58593          	addi	a1,a1,1852 # 10e08 <dish_ref+0x140>
+   106d0:	72c58593          	addi	a1,a1,1836 # 10df8 <dish_ref+0x130>
    106d4:	00000073          	ecall
    106d8:	000ca507          	flw	fa0,0(s9)
    106dc:	af7ff0ef          	jal	101d2 <print_float>
    106e0:	00000617          	auipc	a2,0x0
-   106e4:	73060613          	addi	a2,a2,1840 # 10e10 <dish_ref+0x148>
+   106e4:	72060613          	addi	a2,a2,1824 # 10e00 <dish_ref+0x138>
    106e8:	00164783          	lbu	a5,1(a2)
    106ec:	0605                	addi	a2,a2,1
    106ee:	ffed                	bnez	a5,106e8 <_start+0x164>
@@ -532,7 +532,7 @@ Disassembly of section .text:
    106f4:	04000893          	li	a7,64
    106f8:	4505                	li	a0,1
    106fa:	00000597          	auipc	a1,0x0
-   106fe:	71658593          	addi	a1,a1,1814 # 10e10 <dish_ref+0x148>
+   106fe:	70658593          	addi	a1,a1,1798 # 10e00 <dish_ref+0x138>
    10702:	00000073          	ecall
    10706:	00092507          	flw	fa0,0(s2)
    1070a:	ac9ff0ef          	jal	101d2 <print_float>
@@ -561,7 +561,7 @@ Disassembly of section .text:
    10752:	854a                	mv	a0,s2
    10754:	574000ef          	jal	10cc8 <dish_ref>
    10758:	00000617          	auipc	a2,0x0
-   1075c:	6c060613          	addi	a2,a2,1728 # 10e18 <dish_ref+0x150>
+   1075c:	6b060613          	addi	a2,a2,1712 # 10e08 <dish_ref+0x140>
    10760:	87b2                	mv	a5,a2
    10762:	0017c703          	lbu	a4,1(a5)
    10766:	0785                	addi	a5,a5,1
@@ -570,12 +570,12 @@ Disassembly of section .text:
    1076e:	04000893          	li	a7,64
    10772:	4505                	li	a0,1
    10774:	00000597          	auipc	a1,0x0
-   10778:	6a458593          	addi	a1,a1,1700 # 10e18 <dish_ref+0x150>
+   10778:	69458593          	addi	a1,a1,1684 # 10e08 <dish_ref+0x140>
    1077c:	00000073          	ecall
    10780:	00000917          	auipc	s2,0x0
-   10784:	6b090913          	addi	s2,s2,1712 # 10e30 <dish_ref+0x168>
+   10784:	6a090913          	addi	s2,s2,1696 # 10e20 <dish_ref+0x158>
    10788:	00000617          	auipc	a2,0x0
-   1078c:	6a860613          	addi	a2,a2,1704 # 10e30 <dish_ref+0x168>
+   1078c:	69860613          	addi	a2,a2,1688 # 10e20 <dish_ref+0x158>
    10790:	00164783          	lbu	a5,1(a2)
    10794:	0605                	addi	a2,a2,1
    10796:	ffed                	bnez	a5,10790 <_start+0x20c>
@@ -583,12 +583,12 @@ Disassembly of section .text:
    1079c:	04000893          	li	a7,64
    107a0:	4505                	li	a0,1
    107a2:	00000597          	auipc	a1,0x0
-   107a6:	68e58593          	addi	a1,a1,1678 # 10e30 <dish_ref+0x168>
+   107a6:	67e58593          	addi	a1,a1,1662 # 10e20 <dish_ref+0x158>
    107aa:	00000073          	ecall
    107ae:	0009a507          	flw	fa0,0(s3)
    107b2:	a21ff0ef          	jal	101d2 <print_float>
    107b6:	00000617          	auipc	a2,0x0
-   107ba:	65260613          	addi	a2,a2,1618 # 10e08 <dish_ref+0x140>
+   107ba:	64260613          	addi	a2,a2,1602 # 10df8 <dish_ref+0x130>
    107be:	00164783          	lbu	a5,1(a2)
    107c2:	0605                	addi	a2,a2,1
    107c4:	ffed                	bnez	a5,107be <_start+0x23a>
@@ -596,12 +596,12 @@ Disassembly of section .text:
    107ca:	04000893          	li	a7,64
    107ce:	4505                	li	a0,1
    107d0:	00000597          	auipc	a1,0x0
-   107d4:	63858593          	addi	a1,a1,1592 # 10e08 <dish_ref+0x140>
+   107d4:	62858593          	addi	a1,a1,1576 # 10df8 <dish_ref+0x130>
    107d8:	00000073          	ecall
    107dc:	000a2507          	flw	fa0,0(s4)
    107e0:	9f3ff0ef          	jal	101d2 <print_float>
    107e4:	00000617          	auipc	a2,0x0
-   107e8:	62c60613          	addi	a2,a2,1580 # 10e10 <dish_ref+0x148>
+   107e8:	61c60613          	addi	a2,a2,1564 # 10e00 <dish_ref+0x138>
    107ec:	00164783          	lbu	a5,1(a2)
    107f0:	0605                	addi	a2,a2,1
    107f2:	ffed                	bnez	a5,107ec <_start+0x268>
@@ -609,7 +609,7 @@ Disassembly of section .text:
    107f8:	04000893          	li	a7,64
    107fc:	4505                	li	a0,1
    107fe:	00000597          	auipc	a1,0x0
-   10802:	61258593          	addi	a1,a1,1554 # 10e10 <dish_ref+0x148>
+   10802:	60258593          	addi	a1,a1,1538 # 10e00 <dish_ref+0x138>
    10806:	00000073          	ecall
    1080a:	0004a507          	flw	fa0,0(s1)
    1080e:	9c5ff0ef          	jal	101d2 <print_float>
@@ -665,7 +665,7 @@ Disassembly of section .text:
    108b4:	00000597          	auipc	a1,0x0
    108b8:	0d458593          	addi	a1,a1,212 # 10988 <gelu_rvv>
    108bc:	00000517          	auipc	a0,0x0
-   108c0:	57c50513          	addi	a0,a0,1404 # 10e38 <dish_ref+0x170>
+   108c0:	56c50513          	addi	a0,a0,1388 # 10e28 <dish_ref+0x160>
    108c4:	a77ff0ef          	jal	1033a <benchmark.constprop.0>
    108c8:	4505                	li	a0,1
    108ca:	862a                	mv	a2,a0
@@ -678,7 +678,7 @@ Disassembly of section .text:
    108e4:	8626                	mv	a2,s1
    108e6:	86ca                	mv	a3,s2
    108e8:	00000517          	auipc	a0,0x0
-   108ec:	56050513          	addi	a0,a0,1376 # 10e48 <dish_ref+0x180>
+   108ec:	55050513          	addi	a0,a0,1360 # 10e38 <dish_ref+0x170>
    108f0:	a4bff0ef          	jal	1033a <benchmark.constprop.0>
    108f4:	4505                	li	a0,1
    108f6:	862a                	mv	a2,a0
@@ -691,7 +691,7 @@ Disassembly of section .text:
    10910:	8626                	mv	a2,s1
    10912:	86ca                	mv	a3,s2
    10914:	00000517          	auipc	a0,0x0
-   10918:	54450513          	addi	a0,a0,1348 # 10e58 <dish_ref+0x190>
+   10918:	53450513          	addi	a0,a0,1332 # 10e48 <dish_ref+0x180>
    1091c:	a1fff0ef          	jal	1033a <benchmark.constprop.0>
    10920:	4505                	li	a0,1
    10922:	862a                	mv	a2,a0
@@ -704,7 +704,7 @@ Disassembly of section .text:
    1093c:	86ca                	mv	a3,s2
    1093e:	8626                	mv	a2,s1
    10940:	00000517          	auipc	a0,0x0
-   10944:	52850513          	addi	a0,a0,1320 # 10e68 <dish_ref+0x1a0>
+   10944:	51850513          	addi	a0,a0,1304 # 10e58 <dish_ref+0x190>
    10948:	9f3ff0ef          	jal	1033a <benchmark.constprop.0>
    1094c:	05d00893          	li	a7,93
    10950:	4501                	li	a0,0
